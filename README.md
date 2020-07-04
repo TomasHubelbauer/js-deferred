@@ -17,4 +17,8 @@ export default class Deferred extends Promise {
     this.reject = _reject;
   }
 }
+
+Deferred.prototype.constructor = Promise;
 ```
+
+https://stackoverflow.com/a/48159603/2715716
